@@ -1,0 +1,19 @@
+.general-header {
+  position: relative;
+  z-index: $z-start-m;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 0;
+  @include base-wrap;
+
+  .header-logo {
+    color: $white-clr;
+    font-size: 30px;
+  }
+
+  .header-info {
+    color: $white-clr;
+    font-size: 30px;
+  }
+}

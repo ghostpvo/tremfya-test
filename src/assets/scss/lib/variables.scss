@@ -1,0 +1,50 @@
+@import 'mixins';
+@import 'mediaqueries';
+@import 'typography';
+
+
+// App colors palette
+/////////////////////
+// Orange
+$general-orange-clr:  #F7B834;
+
+// Green
+$general-green-clr:   #05A9A1;
+
+// Purple
+$general-purple-clr:  #46256A;
+
+// White
+$white-clr:           #fff;
+
+// Black
+$black-clr:           #000;
+
+// Grey
+$grey-clr:            #6a6a6a;
+
+
+// Static numbers
+/////////////////////
+// Page wrap width
+$base-wrap: 1440px;
+
+// Offset between blocks
+$offset-m:        24px;
+$offset-m-plus:   32px;
+$offset-l:        48px;
+
+
+// Z-index values
+/////////////////////
+$z-min:         -1;
+$z-default:      0;
+$z-max:          99;
+$z-super-max:    9999999999;
+
+$z-start-s:      1;
+$z-start-m:      2;
+
+$z-mid-m:        6;
+
+$z-large-m:      10;

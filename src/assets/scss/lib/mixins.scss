@@ -1,0 +1,33 @@
+@mixin sq($s){
+  width: $s;
+  height: $s;
+};
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content
+  }
+}
+
+@mixin base-wrap() {
+  width: $base-wrap;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}

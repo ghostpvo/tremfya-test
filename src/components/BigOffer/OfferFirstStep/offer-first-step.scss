@@ -1,0 +1,49 @@
+.offer-first {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: $general-orange-clr;
+  background-image: url("../../../assets/img/woman-before.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 110%;
+
+  &-title {
+    display: block;
+    color: $white-clr;
+    @include font(heading-l, 700);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .15);
+  }
+
+  &-description {
+    display: block;
+    max-width: 600px;
+    margin-top: 10vh;
+    text-align: center;
+    color: $white-clr;
+    @include font(heading-s, 700);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, .15);
+  }
+}
+
+.offer-mouse-icon {
+  &:before {
+    animation: .5s ease 0s infinite alternate move-mouse-wheel;
+  }
+}
+
+@keyframes move-mouse-wheel {
+  from {
+    top: 7px;
+  } to {
+      top: 4px;
+    }
+}

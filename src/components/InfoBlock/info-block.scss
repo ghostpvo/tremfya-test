@@ -1,0 +1,93 @@
+.info-block {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-color: $white-clr;
+
+  &-full-width {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-mid-m;
+    width: 100%;
+    height: 100%;
+
+    .info-block-change-size {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .info-block-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 20vw $offset-l;
+  }
+
+  .info-block-change-size {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: $z-start-m;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 0;
+      height: 2px;
+      width: 100%;
+      content: "";
+      background-color: $black-clr;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 1px);
+      height: 100%;
+      width: 2px;
+      content: "";
+      background-color: $black-clr;
+    }
+
+    &:hover {
+      background-color: lighten($grey-clr, 50%);
+      box-shadow: 0 0 0 5px lighten($grey-clr, 50%);
+    }
+  }
+
+  .main-side {
+    width: 60%;
+  }
+
+  .block-sidebar {
+    width: 25%;
+  }
+
+  .info-item {
+    .blc-title {
+      margin-top: $offset-m;
+      @include font(heading-s, 700);
+      color: $general-green-clr;
+    }
+
+    .blc-text {
+      margin-top: $offset-m;
+      @include font(text-m);
+      color: $black-clr;
+    }
+  }
+
+  .block-sidebar {}
+}

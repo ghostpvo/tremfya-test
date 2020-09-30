@@ -1,0 +1,16 @@
+.big-offer {
+  position: relative;
+  height: 75vh;
+
+  &.first-screen {
+    .offer-screen-general {
+      opacity: 0;
+    }
+  }
+
+  .offer-screen-general {
+    z-index: $z-start-s;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+}
